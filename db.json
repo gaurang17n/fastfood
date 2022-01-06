@@ -1,0 +1,78 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Chilli burger With Pepper Relish",
+      "discription": "This scrumptious burger sits under a chilli lamb pattie, roasted bell pepper dip, onions, tomatoes and lettuce.",
+      "price":"100",
+      "img":"https://i.ndtvimg.com/i/2016-05/chilli-burger_625x350_41464592906.jpg"
+
+    },
+    {
+      "id": 2,
+      "name": "Perfect Lamb Satay Burger",
+      "discription": "Succulent lamb burgers with the crunchiness of cashew nuts and the creaminess of peanut butter smothered with a gorgeous satay sauce.",
+      "price":"100",
+      "img":"https://i.ndtvimg.com/i/2016-05/lamb-burger_625x350_41464593235.jpg"
+
+    },
+    {
+      "id": 3,
+      "name": "Lamb and Tomato Stuffed Burger",
+      "discription": "A perfectly shaped lamb pattie cooked to perfection. The tomatoes aren't just a topping but the spotlight of this beautiful dish.",
+      "price":"100",
+      "img":"https://i.ndtvimg.com/i/2016-05/lamb-tomato-burger_625x350_71464593063.jpg"
+
+    },
+    {
+      "id":4 ,
+      "name": "Crunchy Chicken and Fish Burger",
+      "discription": "Experience the goodness of chicken, fish and a tangy hot and sour sauce.",
+      "price":"100",
+      "img":"https://i.ndtvimg.com/i/2016-05/chicken-fish-burger_625x350_61464592753.jpg"
+
+    },
+    {
+      "id":5 ,
+      "name": "Chicken Feta Cheese Burger With Potato Salad",
+      "discription": "Chicken mince marinated with salt, pepper and feta cheese is only the beginning of this ultimate wonder. To accompany this we've got a guilt free potato salad with a yogurt dressing.",
+      "price":"100",
+      "img":"https://i.ndtvimg.com/i/2016-05/chicken-burger_625x350_61464591266.jpg"
+
+    },
+    {
+      "id":6,
+      "name": "Lentil and Mushroom Burger",
+      "discription": "For the healthy and calorie conscious folks we've got this tasty burger. A lentil, mushroom and sun dried tomato pattie packed between a whole wheat bun.",
+      "price":"100",
+      "img":"https://i.ndtvimg.com/i/2016-05/lentil-mushroom-burger_625x350_71464592318.jpg"
+
+    },
+    {
+      "id":7,
+      "name": "Stuffed Bean Burger",
+      "discription": "Being a vegetarian is no reason to deny yourself the gluttonous pleasures of an overstuffed bun. Try this bean burger with a chipotle chilli and a dash of lime.",
+      "price":"100",
+      "img":"https://i.ndtvimg.com/i/2016-05/stuffed-bean-burger_625x350_71464592156.jpg"
+
+    },
+    {
+      "id":8,
+      "name": " Potato Corn Burger",
+      "discription": "The comfort of potato and the crunch of corn in one thick pattie. Topped off with lettuce, tomatoes, gherkins and served with hot chips.",
+      "price":"100",
+      "img":"https://i.ndtvimg.com/i/2016-05/potato-corn-burger_625x350_51464590875.jpg"
+
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

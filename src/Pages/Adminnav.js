@@ -1,17 +1,19 @@
 import React from 'react'
-import { Container,Row,Col } from 'react-bootstrap'
+import {Container,Row,Col,Nav} from 'react-bootstrap'
+import {Link} from 'react-router-dom'
+
 export default function Adminnav() {
     return (
         <>
            <Container>
             <Row>
-                <Col>
-                <Nav defaultActiveKey="/home" className="flex-column">
-                <Link to="/home">Products</Link>
-                <Link to="/home">Reviews</Link>
-                <Link to="/home">Logout</Link>
-                </Nav>
-                </Col>
+                <Link to="productAdmin">Products</Link>
+            </Row>
+            <Row>
+                <Link to="reviews">Reviews</Link>   
+            </Row>
+            <Row>
+                <Link to="logout">Logout</Link>
             </Row>
             </Container> 
         </>

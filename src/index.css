@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+table,th{
+  margin-top: 30px;
+  padding:7px;
+  border: 1px solid black;
+  background-color: blanchedalmond;
+}
+td{
+  padding:5px;
+  text-align: left;
+  border: 1px solid black;
+  background-color: blanchedalmond;
+}
+#btnid{
+  white-space: nowrap;
+
+}
