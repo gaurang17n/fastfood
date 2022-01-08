@@ -10,8 +10,10 @@ const FetchData = (endpoint) =>{
 }
 
 const DeleteData = (endpoint,id) =>{
-    return axios.get(`http://localhost:3004/${endpoint}/${id}`).then((result)=>{
+    
+    return axios.delete(`http://localhost:3004/${endpoint}/${id}`).then((result)=>{
         return result.data
+        
     })
 }
 export default
