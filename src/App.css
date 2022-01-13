@@ -37,4 +37,23 @@
   }
 }
 
+table,th{
+  padding:7px;
+  border: 2px solid black;
+  background-color: lightgoldenrodyellow;
+  color: black;
+}
 
+td{
+  color: black;
+  padding:5px;
+  text-align: left;
+  border: 3px solid black;
+  background-color:lightgoldenrodyellow;
+}
+tr{
+  color: black;
+  text-align: left;
+  border: 3px solid black;
+  background-color: lightgoldenrodyellow;
+}

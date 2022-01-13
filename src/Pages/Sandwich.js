@@ -3,11 +3,11 @@ import Api from '../API/Api'
 import { Table,Image, Container,Row,Col,Button } from 'react-bootstrap'
 import Sidebarnew from '../Components/Sidebarnew'
 
-export default function Tables(props) {
+export default function Sandwich(props) {
     const [products,setProducts]=useState([])
     let getproducts =() =>{
         console.log(props.Data)
-        Api.FetchData('product').then((products) =>{
+        Api.FetchData('sandwich').then((products) =>{
             console.log("Total Products" + products.length)
             console.log("get api" + JSON.stringify (products))
             setProducts([...products])
@@ -16,7 +16,7 @@ export default function Tables(props) {
 
     let deleteProduct = (id)=>{
         console.log("delete id is" + id)
-        Api.DeleteData('product',id).then((result)=>{
+        Api.DeleteData('sandwich',id).then((result)=>{
             let newproducts = products.filter(pro => pro.id !=id) 
             setProducts(newproducts)
             console.log("Delete Data")
@@ -37,7 +37,7 @@ export default function Tables(props) {
                         <thead >
                             <tr>
                         <th colSpan={6} id="menuburger">
-                                    Burger Menu
+                                    Sandwich Menu
                         </th>
                         </tr>
                             <tr >
@@ -57,7 +57,7 @@ export default function Tables(props) {
                                         <td /* id="btnid1" */>{pro.name}</td>
                                         <td /* id="btnid1" */ >{pro.discription}</td>
                                         <td /* id="btnid1" */>
-                                        <Image src={pro.img} style={{height:'100px',weidth:'100px'}}/>
+                                        <Image src={pro.img} style={{height:'110px',weidth:'100px'}}/>
                                         </td>
                                         <td /* id="btnid1" */>{pro.price}</td>
                                         <td id="btnid">

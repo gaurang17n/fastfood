@@ -1,5 +1,5 @@
 {
-  "products": [
+  "product": [
     {
       "id": 1,
       "name": "Chilli burger With Pepper Relish",
@@ -12,57 +12,95 @@
       "id": 2,
       "name": "Perfect Lamb Satay Burger",
       "discription": "Succulent lamb burgers with the crunchiness of cashew nuts and the creaminess of peanut butter smothered with a gorgeous satay sauce.",
-      "price":"100",
-      "img":"https://i.ndtvimg.com/i/2016-05/lamb-burger_625x350_41464593235.jpg"
-
+      "price": "100",
+      "img": "https://i.ndtvimg.com/i/2016-05/lamb-burger_625x350_41464593235.jpg"
     },
     {
       "id": 3,
       "name": "Lamb and Tomato Stuffed Burger",
       "discription": "A perfectly shaped lamb pattie cooked to perfection. The tomatoes aren't just a topping but the spotlight of this beautiful dish.",
-      "price":"100",
-      "img":"https://i.ndtvimg.com/i/2016-05/lamb-tomato-burger_625x350_71464593063.jpg"
-
+      "price": "100",
+      "img": "https://i.ndtvimg.com/i/2016-05/lamb-tomato-burger_625x350_71464593063.jpg"
     },
     {
-      "id":4 ,
+      "id": 4,
       "name": "Crunchy Chicken and Fish Burger",
       "discription": "Experience the goodness of chicken, fish and a tangy hot and sour sauce.",
-      "price":"100",
-      "img":"https://i.ndtvimg.com/i/2016-05/chicken-fish-burger_625x350_61464592753.jpg"
-
+      "price": "100",
+      "img": "https://i.ndtvimg.com/i/2016-05/chicken-fish-burger_625x350_61464592753.jpg"
     },
     {
-      "id":5 ,
+      "id": 5,
       "name": "Chicken Feta Cheese Burger With Potato Salad",
       "discription": "Chicken mince marinated with salt, pepper and feta cheese is only the beginning of this ultimate wonder. To accompany this we've got a guilt free potato salad with a yogurt dressing.",
-      "price":"100",
-      "img":"https://i.ndtvimg.com/i/2016-05/chicken-burger_625x350_61464591266.jpg"
-
+      "price": "100",
+      "img": "https://i.ndtvimg.com/i/2016-05/chicken-burger_625x350_61464591266.jpg"
     },
     {
-      "id":6,
+      "id": 6,
       "name": "Lentil and Mushroom Burger",
       "discription": "For the healthy and calorie conscious folks we've got this tasty burger. A lentil, mushroom and sun dried tomato pattie packed between a whole wheat bun.",
-      "price":"100",
-      "img":"https://i.ndtvimg.com/i/2016-05/lentil-mushroom-burger_625x350_71464592318.jpg"
-
+      "price": "100",
+      "img": "https://i.ndtvimg.com/i/2016-05/lentil-mushroom-burger_625x350_71464592318.jpg"
     },
     {
-      "id":7,
+      "id": 7,
       "name": "Stuffed Bean Burger",
       "discription": "Being a vegetarian is no reason to deny yourself the gluttonous pleasures of an overstuffed bun. Try this bean burger with a chipotle chilli and a dash of lime.",
-      "price":"100",
-      "img":"https://i.ndtvimg.com/i/2016-05/stuffed-bean-burger_625x350_71464592156.jpg"
+      "price": "100",
+      "img": "https://i.ndtvimg.com/i/2016-05/stuffed-bean-burger_625x350_71464592156.jpg"
+    },
+    {
+      "id": 8,
+      "name": " Potato Corn Burger",
+      "discription": "The comfort of potato and the crunch of corn in one thick pattie. Topped off with lettuce, tomatoes, gherkins and served with hot chips.",
+      "price": "100",
+      "img": "https://i.ndtvimg.com/i/2016-05/potato-corn-burger_625x350_51464590875.jpg"
+    }
+  ],
+  "sandwich":[{
+      "id": 1,
+      "name": "Aloo Grilled Sandwich",
+      "discription": "This potato stuffed sandwich with spices taste awesome. A heavy and healthy quick bite for breakfast or even lunch goes great.",
+      "price": "100",
+      "img": "https://www.crazymasalafood.com/wp-content/images/aloo-grilled-sandwich.jpg"
 
     },
     {
-      "id":8,
-      "name": " Potato Corn Burger",
-      "discription": "The comfort of potato and the crunch of corn in one thick pattie. Topped off with lettuce, tomatoes, gherkins and served with hot chips.",
-      "price":"100",
-      "img":"https://i.ndtvimg.com/i/2016-05/potato-corn-burger_625x350_51464590875.jpg"
+      "id": 2,
+      "name": "Salmon Sandwich",
+      "discription": "Fishes are very healthy food. They are very rich in protein and vitamins as well, but having just boiled fish in breakfast is quite boring. So, have fish sandwiches instead of that boring fish. The speciality of the salmon fish sandwich is that it has deep fried salmon fishes along with lots of cheese and spices as well, which give it an amazing touch and taste as well. The sandwich is simply yummy in taste. ",
+      "price": "100",
+      "img": "https://www.crazymasalafood.com/wp-content/images/salmon-sandwich.jpg"
 
+    },
+    {
+      "id": 3,
+      "name": "Roast Beef Sandwich",
+      "discription": "Beef are very rich in nutrients. The speciality of the beef sandwich is that it has deep fried beef along with lots of cheese which give it an amazing touch and taste as well. The sandwich has lots of veggies in it which makes them healthy also. The sandwich is yummy in taste.",
+      "price": "100",
+      "img": "https://www.crazymasalafood.com/wp-content/images/roast-beef-sandwich.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Meat Ball Sandwich",
+      "discription": "Meat is very rich in nutrients. The speciality of meat ball sandwich is that it has deep fried meat balls along with lots of cheese which give it an amazing touch and taste as well. The sandwich has lots of green vegetables in it which makes them healthy also. The sandwich is simply scrumptious in taste.",
+      "price": "100",
+      "img": "https://www.crazymasalafood.com/wp-content/images/meat-ball-sandwich.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Nutella Sandwich",
+      "discription": "Nutella has nutritious and health benefits as well. The speciality of Nutella sandwich is that it has deep fried Nutella along with lots of cream which give it an amazing touch and taste as well. The sandwich has lots of green vegetables in it which makes them healthy also. The sandwich is simply scrumptious in taste.",
+      "price": "100",
+      "img": "https://www.crazymasalafood.com/wp-content/images/nutella-sandwich.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Prawn Sandwich",
+      "discription": "Prawn has nutritious and health benefits as well. The speciality of prawn sandwich is that it has deep fried prawns along with lots of cream which give it an amazing touch and taste as well. The sandwich has lots of green vegetables in it which makes them healthy also. The sandwich is simply scrumptious in taste.",
+      "price": "100",
+      "img": "https://www.crazymasalafood.com/wp-content/images/prawn-sandwich.jpg"
     }
   ],
   "reviews": [

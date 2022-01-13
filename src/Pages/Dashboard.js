@@ -3,6 +3,7 @@ import Adminnav from './Adminnav'
 import Tables from './Tables'
 import { Container,Row,Col } from 'react-bootstrap'
 import Sidebar from './Sidebar'
+import Sandwich from './Sandwich'
 
 
 
@@ -37,9 +38,7 @@ export default function Dashboard() {
             <>
             <Container fluid>
                 <Row>
-                  <Col>
                     <Sidebar/>
-                  </Col>
                 </Row>
             </Container>
 
@@ -47,6 +46,7 @@ export default function Dashboard() {
                 <Row >
                     <Col>
                       <Tables Data={products}/>
+                      <Sandwich/>
                     </Col>
                     </Row>
               </Container>

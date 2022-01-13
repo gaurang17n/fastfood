@@ -1,16 +1,18 @@
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Col, Container, Row,NavDropdown,Navbar, Dropdown,DropdownButton,Nav} from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 /* import '../all.min.css' */
 import '../sb-admin-2.min.css'
-
+import Sidebarnew from '../Components/Sidebarnew'
 
 export default function Sidebar() {
     return (
         <>
         <Container fluid>
+            
             <Row>
-           
-                <Col sm={3}>
+                
+ {/*                <Col sm={3}>
                 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
                     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
@@ -40,7 +42,7 @@ export default function Sidebar() {
 
 
                     <li class="nav-item">
-                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                        {/* <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                             aria-expanded="true" aria-controls="collapseTwo">
                             <i class="fas fa-fw fa-cog"></i>
                             <span>Components</span>
@@ -52,31 +54,29 @@ export default function Sidebar() {
                                 <a class="collapse-item" href="cards.html">Cards</a>
                             </div>
                         </div>
-                    </li>
+                         <Navbar collapseOnSelect >
+                        <DropdownButton align="end" title="FastFood Items" id="dropdown-menu-align-end">
+                                <Dropdown.Item><Link to="/">Burgers</Link></Dropdown.Item>
+                                <Dropdown.Item >Pizza</Dropdown.Item>
+                                <Dropdown.Item >Sandwich</Dropdown.Item>
+                        </DropdownButton>
+                        </Navbar>
 
+                    </li>
+                   
 
                     <li class="nav-item">
-                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                            aria-expanded="true" aria-controls="collapseUtilities">
-                            <i class="fas fa-fw fa-wrench"></i>
-                            <span>Utilities</span>
-                        </a>
-                        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                            data-parent="#accordionSidebar">
-                            <div class="bg-white py-2 collapse-inner rounded">
-                                <h6 class="collapse-header">Custom Utilities:</h6>
-                                <a class="collapse-item" href="utilities-color.html">Colors</a>
-                                <a class="collapse-item" href="utilities-border.html">Borders</a>
-                                <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                                <a class="collapse-item" href="utilities-other.html">Other</a>
-                            </div>
-                        </div>
+                        <Navbar collapseOnSelect >
+                            <DropdownButton align="end" title="Add Products" id="dropdown-menu-align-end">
+                                    <Dropdown.Item >Action</Dropdown.Item>
+                                    <Dropdown.Item >Another action</Dropdown.Item>
+                                    <Dropdown.Item >Something else here</Dropdown.Item>
+                            </DropdownButton>
+                            </Navbar>
+
                     </li>
 
-
                     <hr class="sidebar-divider"/>
-
-
                     <div class="sidebar-heading">
                         Addons
                     </div>
@@ -117,11 +117,14 @@ export default function Sidebar() {
                     </li>
                     </ul>
                     
-                </Col>
+                </Col> */}
                  {/*  <!-- End of Sidebar --> */}
+
+                    <Col>
+                    <Sidebarnew/>
+                    </Col>
                
-               
-                <Col sm={9}>
+                <Col sm={9} >
                     {/*  <!-- Content Wrapper --> */}
                         <div id="content-wrapper" class="d-flex flex-column">
 
@@ -132,9 +135,9 @@ export default function Sidebar() {
                                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
                                 {/*  <!-- Sidebar Toggle (Topbar) --> */}
-                                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                                   {/*  <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                                         <i class="fa fa-bars"></i>
-                                    </button>
+                                    </button> */}
 
                                 {/*  <!-- Topbar Search --> */}
                                     <form
