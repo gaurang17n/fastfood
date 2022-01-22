@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Container, Row,NavDropdown,Navbar, Dropdown,DropdownButton,Nav} from 'react-bootstrap'
+import { Col, Container, Row,Button,Navbar, Dropdown,DropdownButton,ButtonGroup} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 /* import '../all.min.css' */
 import '../sb-admin-2.min.css'
@@ -58,24 +58,11 @@ export default function Sidebar() {
                             </div>
                         </div> */}
                          <Navbar collapseOnSelect >
-                        <DropdownButton align="end" title="FastFood Items" id="dropdown-menu-align-end">
-                                <Dropdown.Item><Link to="../product">Burgers</Link></Dropdown.Item>
-                                <Dropdown.Item ><Link to="../sandwich">Sandwich</Link></Dropdown.Item>
-                                <Dropdown.Item >pizza</Dropdown.Item>
+                        <DropdownButton align="end" title="Products" id="dropdown-menu-align-end">
+                                <Dropdown.Item><Link to="../product" id='link1'>Show Product</Link></Dropdown.Item>
+                                <Dropdown.Item ><Link to="../addproducts" id='link1'>Add Products</Link></Dropdown.Item>
                         </DropdownButton>
                         </Navbar>
-
-                    </li>
-                   
-
-                    <li class="nav-item">
-                        <Navbar collapseOnSelect >
-                            <DropdownButton align="end" title="Add Products" id="dropdown-menu-align-end">
-                                    <Dropdown.Item >Action</Dropdown.Item>
-                                    <Dropdown.Item >Another action</Dropdown.Item>
-                                    <Dropdown.Item >Something else here</Dropdown.Item>
-                            </DropdownButton>
-                            </Navbar>
 
                     </li>
 

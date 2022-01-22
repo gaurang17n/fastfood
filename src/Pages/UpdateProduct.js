@@ -1,11 +1,25 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 import { Container,Form,Button, Row,Col } from 'react-bootstrap'
 import Sidebarnew from '../Components/Sidebarnew'
 import Api from '../API/Api'
-
+import { useParams } from 'react-router-dom'
 
 export default function Addproducts() {
+
+    const params = useParams(); /* params=parameters */
     const [products,setProducts]=useState({})
+
+    useEffect(() => {
+        dataGet()
+    }, []);
+    
+    let dataGet =() =>{
+        Api.FetchData('products',params.id).then((product)=>{
+            console.log(JSON.stringify(product))
+            setProducts(product)
+        })
+    }
+
     let setData=(event)=>{
         console.log(event.target.name + event.target.value)
 
@@ -16,12 +30,12 @@ export default function Addproducts() {
 
     }
 
+
     let getData =(event)=>{
         event.preventDefault();
-        Api.insertData('products',products).then((result)=>{
-            console.log("Product data is ")
+        Api.updateData('products',params.id,products).then((result)=>{
+            
         })
-        console.log("Products are "+JSON.stringify(products))
     }
     return (
         <>

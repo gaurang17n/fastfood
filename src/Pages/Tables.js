@@ -2,12 +2,15 @@ import React,{useState,useEffect} from 'react'
 import Api from '../API/Api'
 import { Table,Image, Container,Row,Col,Button } from 'react-bootstrap'
 import Sidebarnew from '../Components/Sidebarnew'
+import {useNavigate} from 'react-router-dom'
+
 
 export default function Tables(props) {
+    let navigate =useNavigate();
     const [products,setProducts]=useState([])
     let getproducts =() =>{
         console.log(props.Data)
-        Api.FetchData('product').then((products) =>{
+        Api.FetchData('products').then((products) =>{
             console.log("Total Products" + products.length)
             console.log("get api" + JSON.stringify (products))
             setProducts([...products])
@@ -16,11 +19,16 @@ export default function Tables(props) {
 
     let deleteProduct = (id)=>{
         console.log("delete id is" + id)
-        Api.DeleteData('product',id).then((result)=>{
+        Api.DeleteData('products',id).then((result)=>{
             let newproducts = products.filter(pro => pro.id !=id) 
             setProducts(newproducts)
             console.log("Delete Data")
         })
+    }
+
+    let dataEdit=(id)=>{
+        console.log('id is'+id)
+        navigate(`../update/${id}`)
     }
     useEffect(() => {
        getproducts()
@@ -62,7 +70,7 @@ export default function Tables(props) {
                                         <td /* id="btnid1" */>{pro.price}</td>
                                         <td id="btnid">
                                             <Button variant="danger" style={{margin:'10px'}} onClick={()=>deleteProduct(pro.id)}>Delete</Button>
-                                            <Button id="updatebtn">Update</Button>
+                                            <Button id="updatebtn" onClick={()=>{dataEdit(pro.id)}}>Update</Button>
                                         </td>
                                         </tr>
 

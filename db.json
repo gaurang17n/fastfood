@@ -1,16 +1,8 @@
 {
-  "product": [
-    {
-      "id": 1,
-      "name": "Chilli burger With Pepper Relish",
-      "discription": "This scrumptious burger sits under a chilli lamb pattie, roasted bell pepper dip, onions, tomatoes and lettuce.",
-      "price":"100",
-      "img":"https://i.ndtvimg.com/i/2016-05/chilli-burger_625x350_41464592906.jpg"
-
-    },
+  "products": [
     {
       "id": 2,
-      "name": "Perfect Lamb Satay Burger",
+      "name": "Perfect Lamb Satay Burger123",
       "discription": "Succulent lamb burgers with the crunchiness of cashew nuts and the creaminess of peanut butter smothered with a gorgeous satay sauce.",
       "price": "100",
       "img": "https://i.ndtvimg.com/i/2016-05/lamb-burger_625x350_41464593235.jpg"
@@ -56,15 +48,22 @@
       "discription": "The comfort of potato and the crunch of corn in one thick pattie. Topped off with lettuce, tomatoes, gherkins and served with hot chips.",
       "price": "100",
       "img": "https://i.ndtvimg.com/i/2016-05/potato-corn-burger_625x350_51464590875.jpg"
+    },
+    {
+      "name": "sandwich",
+      "discription": "hereis",
+      "price": "24",
+      "imageurl": "uoioipnnnl",
+      "id": 9
     }
   ],
-  "sandwich":[{
+  "sandwich": [
+    {
       "id": 1,
       "name": "Aloo Grilled Sandwich",
       "discription": "This potato stuffed sandwich with spices taste awesome. A heavy and healthy quick bite for breakfast or even lunch goes great.",
       "price": "100",
       "img": "https://www.crazymasalafood.com/wp-content/images/aloo-grilled-sandwich.jpg"
-
     },
     {
       "id": 2,
@@ -72,7 +71,6 @@
       "discription": "Fishes are very healthy food. They are very rich in protein and vitamins as well, but having just boiled fish in breakfast is quite boring. So, have fish sandwiches instead of that boring fish. The speciality of the salmon fish sandwich is that it has deep fried salmon fishes along with lots of cheese and spices as well, which give it an amazing touch and taste as well. The sandwich is simply yummy in taste. ",
       "price": "100",
       "img": "https://www.crazymasalafood.com/wp-content/images/salmon-sandwich.jpg"
-
     },
     {
       "id": 3,

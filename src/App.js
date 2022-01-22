@@ -11,7 +11,8 @@ import SortingTableComponent from './Components/sorting.table';
 import ExpandableTableComponent from './Components/expandable.table';
 import Demo from './Pages/Demo';
 import Product from './Pages/Product';
-
+import Addproducts from './Pages/Addproducts';
+import UpdateProduct from './Pages/UpdateProduct'
 
 
 
@@ -24,6 +25,8 @@ function App() {
         <Route path="burgers" element={<Tables/>}></Route>
         <Route path="sandwich" element={<Sandwich/>}></Route>
         <Route path="product" element={<Product/>}></Route>
+        <Route path="addproducts" element={<Addproducts/>}></Route>
+        <Route path="update/:id" element={<UpdateProduct/>}></Route>
       </Routes>
      </BrowserRouter>
 

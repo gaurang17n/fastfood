@@ -3,7 +3,7 @@ import React from "react";
 
 import { useTable, usePagination } from 'react-table'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import {Button,Image} from 'react-bootstrap'
 function Table({ columns, data }) {
     // Use the state and functions returned from useTable to build your UI
     const {
@@ -33,44 +33,42 @@ function Table({ columns, data }) {
     // Render the UI for your table
     return (
         <div>
-            <pre>
-                {/* <code>
-                    {JSON.stringify(
-                        {
-                            pageIndex,
-                            pageSize,
-                            pageCount,
-                            canNextPage,
-                            canPreviousPage,
-                        },
-                        null,
-                        2
-                    )}
-                </code> */}
-            </pre>
             <table className="table" {...getTableProps()}>
-                <thead>
-                    {headerGroups.map(headerGroup => (
-                        <tr {...headerGroup.getHeaderGroupProps()}>
-                            {headerGroup.headers.map(column => (
-                                <th {...column.getHeaderProps()}>{column.render('Header')}</th>
-                            ))}
+            <thead >
+                            <tr>
+                        <th colSpan={6} id="menuburger">
+                                    Burger Menu
+                        </th>
                         </tr>
-                    ))}
-                </thead>
-                <tbody {...getTableBodyProps()}>
-                   
-                    {page.map((row, i) => {
-                        prepareRow(row)
-                        return (
-                            <tr {...row.getRowProps()}>
-                                {row.cells.map(cell => {
-                                    return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
-                                })}
+                            <tr >
+                            <th >ID</th>
+                            <th>Name</th>
+                            <th rowSpan={2}>Description</th>
+                            <th>Image</th>
+                            <th>Price</th>
+                            <th>Action</th>
                             </tr>
-                        )
-                    })}
-                </tbody>
+                </thead>
+                <tbody id="td">
+                            {
+                                data.map((pro)=>(
+                                        <tr id="td">
+                                        <td /* id="btnid1" */>{pro.id}</td>
+                                        <td /* id="btnid1" */>{pro.name}</td>
+                                        <td /* id="btnid1" */ >{pro.discription}</td>
+                                        <td /* id="btnid1" */>
+                                        <Image src={pro.img} style={{height:'100px',weidth:'100px'}}/>
+                                        </td>
+                                        <td /* id="btnid1" */>{pro.price}</td>
+                                        <td id="btnid">
+                                            <Button variant="danger" style={{margin:'10px'}} >Delete</Button>
+                                            <Button id="updatebtn" >Update</Button>
+                                        </td>
+                                        </tr>
+
+                            ))
+                            }
+                        </tbody>
             </table>
             {/* 
         Pagination can be built however you'd like. 
@@ -132,27 +130,45 @@ function Table({ columns, data }) {
 
 function PaginationTableComponent(props) {
     const data =props.tabledata
+    const temp=props.temp
   /* console.log('props from other component'+ JSON.stringify(props.tabledata) ) */
 /*   {
      data.map((pro,index)=>{
          console.log(index)
      })
   } */
+        const keys = [];
+        for (const key in data[0]) {
+            keys.push(key);
+        }
+        console.log("New Keys Are" +keys)
 
-    const customer_key=[]
-    /* const custome_value=Object.keys(data[0]) */
-    const temp=['id','name','discription','img','price']
-    console.log(data)
-    for (let i=0;i<10;i++){
 
-        customer_key={
+
+    var customer_key = [];
+    /* const temp=['id','name','discription','img','price'] */
+        for (var x = 0; x < 5; x++)
+        {
+            console.log("Temp Data of array"+ typeof(temp))
+            console.log("Keys data " + typeof(keys))
+        customer_key[x] = {
+            Header: temp[x],
+            accessor: temp[x]
+         }
+        }
+
+   /*  console.log(data)
+    for (let i=0;i<5;i++){
+
+        customer_key+={
                 Header: temp[i],
                 accessor: temp[i], 
     
         }
-    }
-   
-    
+    }  */
+
+    console.log("Customer keys are" + customer_key)
+
     const columns = React.useMemo(
         () => [
             
