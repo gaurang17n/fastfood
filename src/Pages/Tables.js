@@ -5,11 +5,10 @@ import Sidebarnew from '../Components/Sidebarnew'
 import {useNavigate} from 'react-router-dom'
 
 
-export default function Tables(props) {
+export default function Tables() {
     let navigate =useNavigate();
     const [products,setProducts]=useState([])
     let getproducts =() =>{
-        console.log(props.Data)
         Api.FetchData('products').then((products) =>{
             console.log("Total Products" + products.length)
             console.log("get api" + JSON.stringify (products))
@@ -35,17 +34,18 @@ export default function Tables(props) {
     }, [])
     return (
         <>
-            <Container fluid style={{flex:"200px"}}>
+        
+            <Container fluid >
             <Row>
-                <Col sm={2}>
+                <Col sm={3} >
                  <Sidebarnew/>
-                 </Col>
-                <Col sm={10}>
+                 </Col> 
+                <Col sm={9} >
                     <Table >
                         <thead >
                             <tr>
-                        <th colSpan={6} id="menuburger">
-                                    Burger Menu
+                        <th colSpan={6} id="menuburger" >
+                                   Fast Food Menu
                         </th>
                         </tr>
                             <tr >

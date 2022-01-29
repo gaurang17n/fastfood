@@ -3,7 +3,7 @@ import Adminnav from './Adminnav'
 import Tables from './Tables'
 import { Container,Row,Col } from 'react-bootstrap'
 import Sidebar from './Sidebar'
-import Sandwich from './Sandwich'
+import Sandwich from './Category'
 
 
 
@@ -42,14 +42,14 @@ export default function Dashboard() {
                 </Row>
             </Container>
 
-            <Container fluid>
+            {/* <Container fluid>
                 <Row >
                     <Col>
                       <Tables Data={products}/>
                       <Sandwich/>
                     </Col>
                     </Row>
-              </Container>
+              </Container> */}
             </>
             
     )

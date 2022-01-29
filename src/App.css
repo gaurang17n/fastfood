@@ -39,24 +39,64 @@
 
 table,th{
   padding:7px;
-  border: 2px solid black;
-  background-color: lightgoldenrodyellow;
-  color: black;
+  border: 2px solid rgb(41, 40, 40);
+  background-color:white;
+  color: #1F2833;
 }
 
 td{
-  color: black;
+  color:#1F2833;
   padding:5px;
   text-align: left;
-  border: 3px solid black;
-  background-color:lightgoldenrodyellow;
+  border: 3px solid  rgb(41, 40, 40);
+  background-color:white;
 }
 tr{
-  color: black;
+  color: #1F2833;
   text-align: left;
-  border: 3px solid black;
-  background-color: lightgoldenrodyellow;
+  border: 3px solid rgb(41, 40, 40);
+  background-color: white;
 }
 #link1{
   text-decoration: none;
+  font-weight: bold;
 }
+#formcss{
+  font-weight:620;
+  color:#1F2833;
+  text-Align:left;
+  padding-left:50px;
+}
+.navhome{
+  background-color:#717274;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+.navtext{
+  text-align: center ;
+  color:white;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-right:5px;
+
+}
+.centered {
+  font-size: 40px;
+  font-weight: 600;
+  font-style: oblique;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #eebce8;
+}
+.top-right {
+  position:relative;
+  left: 600px;
+}
+
+

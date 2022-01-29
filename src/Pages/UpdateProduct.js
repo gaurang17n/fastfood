@@ -44,44 +44,44 @@ export default function Addproducts() {
                     <Col sm={2}>
                         <Sidebarnew/>
                     </Col>
-                <Col sm={10} style={{backgroundColor:'#1F2833'}}>
+                <Col sm={10} style={{backgroundColor:'#f0ffff'}}>
                     <Row>
-                        <h2 style={{marginTop:'10Px',color:'#66FCF1',fontSize:'35px',width:'10'}}>New Product Details </h2>
+                        <h2 style={{marginTop:'10Px',color:'#1F2833',fontSize:'35px',width:'10'}}>New Product Details </h2>
                         <hr/>
                     </Row>
              
                 <Form onSubmit={getData}>
                 <Form.Group  as={Row} className="mb-3" style={{marginTop:'10Px'}} >
-                    <Form.Label  column sm="2" style={{color:'#66FCF1',textAlign:'left',paddingLeft:'50px'}}>Product Name</Form.Label>
+                    <Form.Label  column sm="2" style={{fontWeight:'620',color:'#1F2833',textAlign:'left',paddingLeft:'50px'}}>Product Name</Form.Label>
                     <Col sm="4">
                     <Form.Control type="text" placeholder="Enter Product Name" id='name' name='name' value={products.name} onChange={setData}/>
                     </Col>
                 </Form.Group>
 
                 <Form.Group as={Row} className="mb-3" >
-                    <Form.Label column sm="2" column sm="2" style={{color:'#66FCF1',textAlign:'left',paddingLeft:'50px'}}>Description</Form.Label>
+                    <Form.Label column sm="2" column sm="2" style={{fontWeight:'620',color:'#1F2833',textAlign:'left',paddingLeft:'50px'}}>Description</Form.Label>
                     <Col sm="10">
                     <Form.Control type="text" placeholder="Add Description about Product" id='discription' name='discription' value={products.discription} onChange={setData} />
                     </Col>
                 </Form.Group>
 
                 <Form.Group as={Row} className="mb-3" >
-                    <Form.Label column sm="2" column sm="2" style={{color:'#66FCF1',textAlign:'left',paddingLeft:'50px'}}>Price</Form.Label>
+                    <Form.Label column sm="2" column sm="2" style={{fontWeight:'620',color:'#1F2833',textAlign:'left',paddingLeft:'50px'}}>Price</Form.Label>
                     <Col sm="2">
                     <Form.Control type="text" placeholder="Price" id='price' name='price' value={products.price} onChange={setData} />
                     </Col>
                 </Form.Group>
 
                 <Form.Group as={Row} className="mb-3" >
-                    <Form.Label column sm="2" column sm="2" style={{color:'#66FCF1',textAlign:'left',paddingLeft:'50px'}}>Image URL</Form.Label>
+                    <Form.Label column sm="2" column sm="2" style={{fontWeight:'620',color:'#1F2833',textAlign:'left',paddingLeft:'50px'}}>Image URL</Form.Label>
                     <Col sm="10">
                     <Form.Control type="text" placeholder="Enter Image URL" id='imageurl' name='img' value={products.img} onChange={setData} />
                     </Col>
                 </Form.Group>
 
 
-                <Button variant="dark" size='lg' type="submit" style={{color:'#66FCF1'}} >
-                    Add Product
+                <Button variant="dark" size='lg' type="submit" style={{fontWeight:'620',color:'#66FCF1'}} >
+                    Update Product Detail
                 </Button>
                 </Form>
                

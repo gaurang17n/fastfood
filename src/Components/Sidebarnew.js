@@ -9,12 +9,12 @@ import { AiFillDashboard } from "react-icons/ai"
 export default function Sidebar() {
     return (
         <>
-        <Container fluid>
+        <Container fluid >
             
-            <Row>
+            <Row  style={{backgroundColor:'#1F2833'}} >
                 
-                <Col >
-                <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar" style={{height:'100%'}}>
+                <Col sm={3} >
+                <ul class="navbar-nav  sidebar sidebar-dark " style={{width:'80%',height:'1000px',backgroundColor:'#1F2833'}}>
 
                     <Link class="sidebar-brand d-flex align-items-center justify-content-center" to="index.html">
                         {/* <div class="sidebar-brand-icon rotate-n-15"> */}
@@ -57,12 +57,37 @@ export default function Sidebar() {
                                 <a class="collapse-item" href="cards.html">Cards</a>
                             </div>
                         </div> */}
-                         <Navbar collapseOnSelect >
-                        <DropdownButton align="end" title="Products" id="dropdown-menu-align-end">
-                                <Dropdown.Item><Link to="../product" id='link1'>Show Product</Link></Dropdown.Item>
-                                <Dropdown.Item ><Link to="../addproducts" id='link1'>Add Products</Link></Dropdown.Item>
-                        </DropdownButton>
-                        </Navbar>
+
+                        <Navbar collapseOnSelect>
+                            <Dropdown>
+                                <Dropdown.Toggle id="dropdown-button-dark-example1" variant="success"> Products</Dropdown.Toggle>
+                                <Dropdown.Menu variant="success">
+                                <Dropdown.Item> <Link to="../burgers" id='link1'>Show Product</Link></Dropdown.Item>
+                                <Dropdown.Divider />
+                                <Dropdown.Item><Link to="../addproducts" id='link1'>Add Products</Link></Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
+                         </Navbar>
+                         <Navbar collapseOnSelect>
+                            <Dropdown>
+                                <Dropdown.Toggle id="dropdown-button-dark-example1" variant="success"> Category</Dropdown.Toggle>
+                                <Dropdown.Menu variant="success">
+                                <Dropdown.Item> <Link to="../category" id='link1'>Show Category</Link></Dropdown.Item>
+                                <Dropdown.Divider />
+                                <Dropdown.Item><Link to="../addcategory" id='link1'>Add Category</Link></Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
+                         </Navbar>
+                         <Navbar collapseOnSelect>
+                            <Dropdown>
+                                <Dropdown.Toggle id="dropdown-button-dark-example1" variant="success"> Review</Dropdown.Toggle>
+                                <Dropdown.Menu variant="success">
+                                <Dropdown.Item> <Link to="../category" id='link1'>Show Review</Link></Dropdown.Item>
+                                <Dropdown.Divider />
+                                <Dropdown.Item><Link to="../addcategory" id='link1'>Add Review</Link></Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
+                         </Navbar>
 
                     </li>
 
